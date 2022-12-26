@@ -1,5 +1,6 @@
 import Validator from '../Validator';
 
+
 test('тест на валидное значение имени', () => {
   expect(new Validator().validateUsername('snezhka003pr')).toEqual('Ваше имя соответствует правилам!');
 });

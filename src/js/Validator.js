@@ -1,7 +1,5 @@
 export default class Validator {
   validateUsername(name) {
-    this.name = name;
-
     if (/^[a-zA-Z0-9_-]+$/.test(name) === false) {
       throw new Error('Имя должно содержать только латинские буквы, тире, подчеркивание и цифры');
     } else if (/[0-9]{4,}/.test(name) === true) {
